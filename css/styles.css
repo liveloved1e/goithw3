@@ -23,10 +23,6 @@ section{
   padding-bottom: 120px;
 }
 
-.footer-container{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 
 
 
@@ -76,6 +72,7 @@ body {
 .main-header{
   margin-top: 24px;
   background: #ffffff;
+  border-bottom: 1px solid #e7e9fc
 }
 
 .page-nav{
@@ -85,7 +82,7 @@ body {
 
 .nav-list{
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .header-logo{
@@ -182,7 +179,7 @@ color: #404BBF;
 /* ============ HERO ============ */
 
 .hero-with-main-h{
-
+  padding: 188px 0;
   background-color: #2e2f42;
 }
 .main-title{
@@ -191,8 +188,10 @@ letter-spacing: 0.02em;
 line-height: 1.07;
 text-align: center;
 color: #fff;
-/* margin-top: 188px;  */
 margin-bottom: 48px;
+max-width: 496px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .order-service-btn{
@@ -206,9 +205,10 @@ margin-bottom: 48px;
   margin-bottom: 94px;
   min-width: 144px;
   border-radius: 4px;
-    width: 169px;
-    height: 56px;
-    display: block;
+  height: 56px;
+  display: block;
+  min-width: 169px;
+  border: none;
 }
 
 .order-service-btn:hover,
@@ -235,19 +235,18 @@ margin-bottom: 48px;
 }
 
 .benefits-list{
-  /* margin-bottom: 120px; */
   justify-content: space-around;
   margin-top: 60px;
   margin-left: auto;
   margin-right:auto;
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .benefits-list-item{
   width: calc((100% - 3 * 24px) / 4)
 }
-
 
 .name-of-benefits{
 
@@ -255,7 +254,6 @@ margin-bottom: 48px;
 letter-spacing: 0.02em;
 color: #2e2f42;
 margin-bottom: 8px;
-
 
 }
 
@@ -267,9 +265,8 @@ color: #434455;
 }
 
 
-
-
 /* ============ OUR TEAM SECTION ============ */
+
 
 .section-with-our-team{
   background-color: rgba(40, 214, 214, 0.247);
@@ -332,11 +329,11 @@ gap: 24px;
 }
 
 
-
 /* ============ PORTFOLIO SECTION ============ */
 
+
 .title-of-section-with-portfolio{
-/* margin-top: 120px; */
+
   font: 700 36px / 1.11111 "Roboto", sans-serif;
   letter-spacing: 0.02em;
   text-align: center;
@@ -371,14 +368,11 @@ gap: 24px;
 }
 
 .portfolio-list{
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 15px; */
+
 display: flex;
 flex-wrap: wrap;
-  
-  gap: 21px;
-  
+gap: 21px;
+
 }
 
 
@@ -398,10 +392,11 @@ flex-wrap: wrap;
 
 /* ============ FOOTER ============ */
 
+
 .bottom-footer{
 
   background: #2e2f42;
-
+padding: 100px 0;
 }
 
 .footer-logo{
@@ -411,8 +406,8 @@ flex-wrap: wrap;
   text-transform: uppercase;
   color:  #4d5ae5;
   line-height: 1.17;
-  
-  
+  display: inline-block;
+  margin-bottom: 16px;
 
 }
 
@@ -427,7 +422,6 @@ flex-wrap: wrap;
   font: 400 16px / 1.5 "Roboto", sans-serif;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;
   max-width: 264px;
 
 }
